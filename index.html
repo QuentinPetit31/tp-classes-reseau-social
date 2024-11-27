@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion des actions d'utilisateurs</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <img
+      id="logoFb"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/1024px-Facebook_Logo_2023.png"
+    />
+    <h1>Publier un contenu</h1>
+    <form id="publicationForm">
+      <label for="username">Pseudo :</label>
+      <br />
+      <input type="text" id="username" placeholder="Entrez le nom" required />
+      <br />
+
+      <label for="content">Contenu de la publication :</label>
+      <br />
+      <input
+        type="text"
+        id="content"
+        placeholder="Entrez le contenu"
+        required
+      />
+      <br />
+
+      <button type="submit">Publier</button>
+    </form>
+
+    <div class="message" id="errorMessage"></div>
+    <h2>Publications</h2>
+    <ul id="publicationsList"></ul>
+  </body>
+</html>
